@@ -1,0 +1,45 @@
+﻿<ArcGIS defaultAssembly="MultipatchBuilderExCubeDemo.dll" defaultNamespace="MultipatchBuilderExCubeDemo" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{987bd26b-1c2e-4fbb-8c49-42600c68ff8e}" version="1.0" desktopVersion="2.5.21645">
+    <Name>MultipatchBuilderExCubeDemo</Name>
+    <Description>MultipatchBuilderExCubeDemo description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>abhi8863</Author>
+    <Company>Acme</Company>
+    <Date>3/6/2020 11:36:08 AM, 2020</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="MultipatchBuilderExCubeDemo_Module" className="Module1" autoLoad="false" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <!--<tab id="MultipatchBuilderExCubeDemo_Tab1" caption="New Tab">
+          <group refID="MultipatchBuilderExCubeDemo_Group1"/>
+        </tab>-->
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="MultipatchBuilderExCubeDemo_Group1" caption="Group 1" appearsOnAddInTab="true">
+          <!-- host controls within groups -->
+          <button refID="MultipatchBuilderExCubeDemo_CreateCubeMultipatch" size="large" />
+          <button refID="MultipatchBuilderExCubeDemo_ApplyMaterials" size="large" />
+          <button refID="MultipatchBuilderExCubeDemo_ApplyTextures" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <button id="MultipatchBuilderExCubeDemo_CreateCubeMultipatch" caption="Create Cube Multipatch" className="CreateCubeMultipatch" loadOnClick="true" smallImage="Images/CreateCubeMultipatch16.png" largeImage="Images/CreateCubeMultipatch32.png">
+          <tooltip heading="Create Cube Multipatch">Create Cube Multipatch<disabledText /></tooltip>
+        </button>
+        <button id="MultipatchBuilderExCubeDemo_ApplyMaterials" caption="Apply Materials" className="ApplyMaterials" loadOnClick="true" smallImage="Images/ApplyMaterials16.png" largeImage="Images/ApplyMaterials32.png">
+          <tooltip heading="Apply Materials">ApplyMaterials<disabledText /></tooltip>
+        </button>
+        <button id="MultipatchBuilderExCubeDemo_ApplyTextures" caption="Apply Textures" className="ApplyTextures" loadOnClick="true" smallImage="Images/ApplyTexture16.png" largeImage="Images/ApplyTexture32.png">
+          <tooltip heading="Apply Textures">Apply Textures<disabledText /></tooltip>
+        </button>
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>
